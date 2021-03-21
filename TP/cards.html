@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+    <style>
+      .gallery {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          /* background-color: #e9e9e9; */
+      }
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .gallery {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .card{
+        margin: 1em;
+        background-color: white;
+        border-radius: .4em;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.15)
+      }
+
+      .card-content {
+        padding: 2em;
+        display: grid;
+        place-content: center;
+      }
+
+      .card-image {
+        margin: 1em 0;
+      }
+
+      .card-image img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .card p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      .more {
+        text-decoration: none;
+        text-align: center;
+        background: #D033B0;
+        font-size: .8em;
+        color: white;
+        display: inline-block;
+        padding: .7em 2em;
+        border-radius: 2em;
+        margin-top: 1em;
+        transition: 0.3s;
+      }
+
+      .more:hover {
+        background: #F269D6;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-top: 0;
+      }
+
+      .desc {
+        line-height: 1.9em;
+        font-size: .8em;
+        color: #4C4C4C;
+      }
+
+      .wa-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wa-cta a {
+        margin-left: 1em;
+      }
+
+      .wa-cta img {
+        display: block;
+        margin: auto 0;
+      }
+    </style>
+
+    <div class="gallery">
+      <div class="card">
+        <div class="card-image">
+            <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/EP.png" alt=""/>
+        </div>
+        <div class="card-content">
+          <p class="title">Esperanzas Pulchritas</p>
+          <div class="desc">
+            <p><b>Edad:</b> niñas menores de 8 años</p>
+            <p><b>Patrona secundaria:</b> Santa Jacinta</p>
+            <p><b>Espíritu:</b> sembrar ternura por la pureza, la alegría cristiana, amor al Rosario, los buenos hábitos, la disciplina</p>
+            <div class="wa-cta">
+              <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/whatsapp.png" alt="whatsapp: " width="26px" height="26px">
+              <a href="https://wa.me/5213321884282">33 2188 4282</a>
+            </div>
+          </div>
+          <a href="#" class="more">Ver más</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/PDM.png" alt=""/>
+        </div>
+        <div class="card-content">
+          <p class="title">Pulchritas de María</p>
+          <div class="desc">
+            <p><b>Edad:</b> niñas de 8 a 12 años</p>
+            <p><b>Patrona secundaria:</b> Santa Teresita</p>
+            <p><b>Espíritu:</b> sembrar amor por la pureza, generosidad, servicialidad, obediencia y alegría</p>
+            <div class="wa-cta">
+              <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/whatsapp.png" alt="whatsapp: " width="26px" height="26px">
+              <a href="https://wa.me/5213314580858">33 1458 0858</a>
+            </div>
+          </div>
+          <a href="#" class="more">Ver más</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/TPG.png" alt=""/>
+        </div>
+        <div class="card-content">
+          <p class="title">Tota Pulchra Guadalupe</p>
+          <div class="desc">
+            <p><b>Edad:</b> adolescentes de 13 a 17 años</p>
+            <p><b>Patrona secundaria:</b> Santa María Goretti</p>
+            <p><b>Espíritu:</b> formar en la pureza en los albores de su adolescencia, iluminándolas a ser firmes en un medio con frecuencia hostil</p>
+            <div class="wa-cta">
+              <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/whatsapp.png" alt="whatsapp: " width="26px" height="26px">
+              <a href="https://wa.me/5213322540588">33 2254 0588</a>
+            </div>
+          </div>
+          <a href="#" class="more">Ver más</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/MTP.png" alt=""/>
+        </div>
+        <div class="card-content">
+          <p class="title">Madonna Tota Pulchra</p>
+          <div class="desc">
+            <p><b>Edad:</b> universitarias desde 18 años</p>
+            <p><b>Patrona secundaria:</b> Santa Catalina de Siena</p>
+            <p><b>Espíritu:</b> apoyarse mutuamente, ahondar razones de la fe y de la sana filosofía para un noviazgo puro y casto</p>
+            <div class="wa-cta">
+              <img src="https://www.mileschristi.org.mx/wp-content/uploads/sites/5/2020/11/whatsapp.png" alt="whatsapp: " width="26px" height="26px">
+              <a href="https://wa.me/5213318032187">33 1803 2187</a>
+            </div>
+          </div>
+          <a href="#" class="more">Ver más</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
